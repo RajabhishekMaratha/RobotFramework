@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.0 on win32)" generated="2024-12-17T14:55:17.910707" rpa="false" schemaversion="5">
+<suite id="s1" name="Rahul1" source="C:\development\robot-scripts\Rahul1">
+<suite id="s1-s1" name="Tests" source="C:\development\robot-scripts\Rahul1\tests">
+<suite id="s1-s1-s1" name="Test1" source="C:\development\robot-scripts\Rahul1\tests\test1.robot">
+<test id="s1-s1-s1-t1" name="Validate the user" line="9">
+<kw name="Open the web browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:24.173072" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-17T14:55:24.173072" elapsed="23.986744"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:24.171079" elapsed="23.989266"/>
+</kw>
+<kw name="Enter invalid credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:48.221471" level="INFO">Typing text 'rahulshettyacademy' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:55:48.214982" elapsed="0.529988"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:48.750956" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-12-17T14:55:49.006832" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>learning1</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:55:48.747359" elapsed="0.467887"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:49.216244" level="INFO">Selecting options from selection list 'xpath=//select' by value teach.</msg>
+<arg>xpath=//select</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-12-17T14:55:49.215246" elapsed="0.376683"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:49.593702" level="INFO">Clicking element 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:55:49.592572" elapsed="0.424561"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:48.160345" elapsed="1.856788"/>
+</kw>
+<kw name="Wait until Error messege is displayed">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Error_alert_Login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-17T14:55:50.018411" elapsed="2.237350"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:50.018411" elapsed="2.238342"/>
+</kw>
+<kw name="Verify if error message is correct">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:52.258755" level="INFO">Verifying element 'css=.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<arg>${Error_alert_Login}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-12-17T14:55:52.257754" elapsed="0.135794"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:52.256753" elapsed="0.137809"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-17T14:55:52.396006" elapsed="13.889714"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:24.168910" elapsed="42.117349"/>
+</test>
+<status status="PASS" start="2024-12-17T14:55:18.120740" elapsed="48.165519"/>
+</suite>
+<status status="PASS" start="2024-12-17T14:55:18.118613" elapsed="48.167646"/>
+</suite>
+<status status="PASS" start="2024-12-17T14:55:18.075938" elapsed="48.210321"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Rahul1">Rahul1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Rahul1.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test1">Rahul1.Tests.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

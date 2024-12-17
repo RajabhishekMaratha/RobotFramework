@@ -1,0 +1,30 @@
+==============================================================================
+Rahul1                                                                        
+==============================================================================
+Rahul1.Tests                                                                  
+==============================================================================
+Rahul1.Tests.custLibs :: This is some basic info about the suite              
+==============================================================================
+Verify the cards are displayed                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\development\robot-scripts\Rahul1\tests\custLibs.robot:20
+    T:  Verify the cards are displayed    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\development\robot-scripts\Rahul1\tests\custLibs.robot:24
+      Add Items To Cart And Checkout    @{ListofProducts}
+      |  @{ListofProducts} = ['Blackberry', 'Nokia Edge'] (list)
+______________________________________________________________________________
+| FAIL |
+Keyword 'Shop.Add Items To Cart And Checkout' expected 1 argument, got 2.
+------------------------------------------------------------------------------
+Rahul1.Tests.custLibs :: This is some basic info about the suite      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Rahul1.Tests                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Rahul1                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\development\robot-scripts\Rahul1\pabot_results\6\output.xml

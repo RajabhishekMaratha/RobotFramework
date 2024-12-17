@@ -1,0 +1,11 @@
+datasources:0bf38a6abca7473dd8d5719a58935767cd35bcb2
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:2efc7701b841fbebb91729942f173e6c69fc3491
+--suite Rahul1.Tests.Param
+--suite Rahul1.Tests.Pom
+--suite Rahul1.Tests.Test1
+--suite Rahul1.Tests.Test2
+--suite Rahul1.Tests.Windows
+--suite Rahul1.Tests.csvParam
+--suite Rahul1.Tests.custLibs

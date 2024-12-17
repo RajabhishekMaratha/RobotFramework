@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.0 on win32)" generated="2024-12-17T14:55:18.238760" rpa="false" schemaversion="5">
+<suite id="s1" name="Rahul1" source="C:\development\robot-scripts\Rahul1">
+<suite id="s1-s1" name="Tests" source="C:\development\robot-scripts\Rahul1\tests">
+<suite id="s1-s1-s1" name="Windows" source="C:\development\robot-scripts\Rahul1\tests\windows.robot">
+<test id="s1-s1-s1-t1" name="Validate Child Window Funcionality" line="12">
+<kw name="Open the web browser" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:24.711011" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-17T14:55:24.709920" elapsed="27.242120"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-17T14:55:51.952552" elapsed="0.090274"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:24.707918" elapsed="27.334908"/>
+</kw>
+<kw name="Select Link of Child Window">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:55:52.064776" level="INFO">Clicking element 'xpath=//a[@href='https://rahulshettyacademy.com/documents-request']'.</msg>
+<arg>xpath=//a[@href='https://rahulshettyacademy.com/documents-request']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:55:52.062920" elapsed="0.586064"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:55:52.648984" elapsed="0.163113"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:52.044902" elapsed="0.768193"/>
+</kw>
+<kw name="Verify if user is switched to Child Window">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${nav_bar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-17T14:55:52.814607" elapsed="12.039621"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:56:04.875629" level="INFO">Current page contains element 'xpath=//div[@class='navbar-collapse collapse clearfix']'.</msg>
+<arg>${nav_bar}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-12-17T14:56:04.854228" elapsed="0.021401"/>
+</kw>
+<status status="PASS" start="2024-12-17T14:55:52.813095" elapsed="12.062534"/>
+</kw>
+<kw name="Grab Email in child window">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T14:56:04.933289" level="INFO">${text} = Please email us at mentor@rahulshettyacademy.com with below template to receive response</msg>
+<var>${text}</var>
+<arg>xpath=//p[@class='im-para red']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T14:56:04.875629" elapsed="0.058692"/>
+</kw>
+<kw name="Split String ${text}">
+<msg time="2024-12-17T14:56:04.938321" level="FAIL">No keyword with name 'Split String ${text}' found. Did you try using keyword 'String.Split String' and forgot to use enough whitespace between keyword and arguments?</msg>
+<var>${word}</var>
+<arg>at</arg>
+<status status="FAIL" start="2024-12-17T14:56:04.937307" elapsed="0.001014">No keyword with name 'Split String ${text}' found. Did you try using keyword 'String.Split String' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Get From List" owner="Collections">
+<var>${sec}</var>
+<arg>${word}</arg>
+<arg>1</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="NOT RUN" start="2024-12-17T14:56:04.938321" elapsed="0.000000"/>
+</kw>
+<kw name="Split String" owner="String">
+<var>${words}</var>
+<arg>${sec}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2024-12-17T14:56:04.939718" elapsed="0.000000"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<var>${email}</var>
+<arg>${word}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="NOT RUN" start="2024-12-17T14:56:04.939718" elapsed="0.001014"/>
+</kw>
+<status status="FAIL" start="2024-12-17T14:56:04.875629" elapsed="0.065103">No keyword with name 'Split String ${text}' found. Did you try using keyword 'String.Split String' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Switch to Parent Window and enter Email">
+<status status="NOT RUN" start="2024-12-17T14:56:04.940732" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-17T14:56:04.940732" elapsed="4.296298"/>
+</kw>
+<status status="FAIL" start="2024-12-17T14:55:24.707918" elapsed="44.529194">No keyword with name 'Split String ${text}' found. Did you try using keyword 'String.Split String' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>This is some basic info about the suite</doc>
+<status status="FAIL" start="2024-12-17T14:55:18.487808" elapsed="50.750249"/>
+</suite>
+<status status="FAIL" start="2024-12-17T14:55:18.483732" elapsed="50.754841"/>
+</suite>
+<status status="FAIL" start="2024-12-17T14:55:18.434135" elapsed="50.805451"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Rahul1">Rahul1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Rahul1.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Windows">Rahul1.Tests.Windows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,32 @@
+==============================================================================
+Rahul1                                                                        
+==============================================================================
+Rahul1.Tests                                                                  
+==============================================================================
+Rahul1.Tests.Windows :: This is some basic info about the suite               
+==============================================================================
+Validate Child Window Funcionality                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\development\robot-scripts\Rahul1\tests\windows.robot:12
+    T:  Validate Child Window Funcionality    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\development\robot-scripts\Rahul1\tests\windows.robot:15
+      Grab Email in child window    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\development\robot-scripts\Rahul1\tests\windows.robot:30
+      Split String ${text}    at
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Split String ${text}' found. Did you try using keyword 'String.Split String' and forgot to use enough whitespace between keyword and arguments?
+------------------------------------------------------------------------------
+Rahul1.Tests.Windows :: This is some basic info about the suite       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Rahul1.Tests                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Rahul1                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\development\robot-scripts\Rahul1\pabot_results\4\output.xml
